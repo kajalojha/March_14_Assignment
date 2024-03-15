@@ -1,0 +1,5 @@
+use avisoft;
+SELECT e1.EMPLOYEE_ID AS Emp_Id, e1.LAST_NAME AS Employee, e2.EMPLOYEE_ID AS Mgr_Id, e2.LAST_NAME AS Manager
+FROM employeesn e1
+INNER JOIN employeesn e2 ON e1.MANAGER_ID = e2.EMPLOYEE_ID
+ORDER BY e1.EMPLOYEE_ID;
